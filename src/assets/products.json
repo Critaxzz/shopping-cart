@@ -1,0 +1,63 @@
+[{
+    "name":"Mi 10i","price":30600,"id":101,
+    "path":"../../assets/images/iphone-11-pro.jpeg",
+    "image":"https://www.91-img.com/gallery_images_uploads/1/9/192b6e8bf035d24b80c300217d3ae8ff8b2ddf4e.jpg?w=0&h=901&q=80&c=1",
+    "image2":"https://www.91-img.com/gallery_images_uploads/0/0/000fb3c5304b963e498bf61e36b1751780f687a2.jpg?w=0&h=901&q=80&c=1",
+    "quantity":1,"discription":["64 GB ROM",
+    "14.73 cm (5.8 inch) Super Retina XDR Display",
+    "12MP + 12MP + 12MP | 12MP Front Camera",
+    "A13 Bionic Chip Processor"] 
+},
+{
+    "name":"OnePlus Nord","price":29990,"id":102,
+    "path":"../../assets/images/oneplus-7-pro.jpeg","quantity":1,
+    "image":"https://www.91-img.com/gallery_images_uploads/7/0/708d97b1cb9e2d368a240363dac4fe7124ed2c01.jpg?w=0&h=901&q=80&c=1",
+    "image2":"https://www.91-img.com/gallery_images_uploads/e/e/ee0eea1f91eb3edbc3dd3dd17021b2d2d0a80ba1.jpg?w=0&h=901&q=80&c=1",
+    "discription":["12 GB RAM | 256 GB ROM",
+    "16.94 cm (6.67 inch) Display",
+    "48 MP + 8 MP + 16 MP | 16MP Front Camera",
+    "4000 mAh Battery"]
+},
+{
+    "name":"Samsung S10","price":35999,"id":201,
+    "path":"../../assets/images/asus-rog-original.jpeg",
+    "image":"https://www.91-img.com/gallery_images_uploads/8/4/8446ff27b3a36c689d23cbf2be4514a75cbe17ef.jpg?w=0&h=901&q=80&c=1",
+    "image2":"https://www.91-img.com/gallery_images_uploads/4/9/4975b968814efc9d5ddf0fc8b2276b7e435e4b42.jpg?w=0&h=901&q=80&c=1",
+    "quantity":1,"discription":["NVIDIA Geforce GTX 1650 Ti for Desktop Level Performance",
+    "15.6 inch Full HD LED Backlit Anti-glare IPS-Level Display",
+    "Light Laptop without Optical Disk Drive",
+    "Pre-installed Genuine Windows 10 OS"]
+},
+{
+    "name":"Realme Narzo","price":15990,"id":201,
+    "path":"../../assets/images/hp-na-gaming-laptop.jpeg","quantity":1,
+    "image":"https://www.91-img.com/gallery_images_uploads/1/d/1d4dd3f8e6ec8b1c62c0bbbc1c6e79b8546386e5.jpg?w=0&h=901&q=80&c=1",
+    "image2":"https://www.91-img.com/gallery_images_uploads/e/c/ec01535c0e92697c61c72812cb450cae075d5d3c.jpg?w=0&h=901&q=80&c=1",
+    "discription":["NVIDIA Geforce GTX 1650 Ti for Desktop Level Performance",
+    "15.6 inch Full HD LED Backlit Display",
+    "Light Laptop without Optical Disk Drive",
+    "Pre-installed Genuine Windows 10 OS"]
+},
+{
+    "name":"NOKIA 5.4","price":15500,"id":301,
+    "path":"../../assets/images/rockerz-450-boat.jpeg","quantity":1,
+    "image":"https://www.91-img.com/gallery_images_uploads/1/5/15df49f6266a7f2ff1b73a0a2dbcc67fb175bd43.jpg?w=0&h=901&q=80&c=1",
+    "image2":"https://www.91-img.com/gallery_images_uploads/9/a/9a8eb5f4411b47de20b9e7434cac09247c29ec00.jpg?w=0&h=901&q=80&c=1",
+    "discription":["With Mic:Yes",
+    "Connector type: 3.5 mm",
+    "40mm Drivers: HD Sound",
+    "Adjustable Earcups",
+    "Up to 8H Playback",
+    "Lightweight Design",
+    "Dual Modes: Bluetooth & AUX"]
+},
+{
+    "name":"Moto G9","price":12800,"id":301,
+    "path":"../../assets/images/flipkart-smartbuy.jpeg","quantity":1,
+    "image":"https://www.91-img.com/gallery_images_uploads/8/8/88fde1815619087df2f28ff304f5abf27230cbe4.jpg?w=0&h=901&q=80&c=1",
+    "image2":"https://www.91-img.com/gallery_images_uploads/4/1/41fb02febf5fdbbf54e3eba6918ea1ea5e2b76f2.jpg?w=0&h=901&q=80&c=1",
+    "discription":["With Mic:No",
+    "Connector type: 3.5 mm",
+    "Flatwire: Stays tangle free even in your pocket"]
+}
+]
