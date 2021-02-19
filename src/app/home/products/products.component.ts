@@ -1,5 +1,6 @@
+import { SignupService } from './../../services/signup.service';
 import { ProductService } from './../../services/product.service';
-import { Component, OnInit } from '@angular/core';   
+import { Component, Input, OnInit } from '@angular/core';   
 
 @Component({
   selector: 'app-products',
@@ -7,23 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit { 
-  lis:any
-  productList=[{
-    name:"name",
-    rs:348724,
-    "path":"../../assets/images/oneplus-7-pro.jpeg"
-  } 
-]
+  list:any 
 
-  constructor(private product:ProductService) { }
+  constructor(private product:ProductService,private service:SignupService) { }
 
   ngOnInit(): void { 
     this.product.getData().subscribe((x)=>{
-      this.lis=x;
+      this.list=x;
     })
   } 
-  addCart(i:any){
-    console.log("added to cart",i)
+  addCart(item:[]){
+    console.log("added to cart",item)
+    this.service.addtoCart(item)
   }
 
 

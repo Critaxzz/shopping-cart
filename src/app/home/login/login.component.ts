@@ -28,16 +28,17 @@ export class LoginComponent implements OnInit {
         return{
           id:doc.payload.doc.id,
           ...doc.payload.doc.data() as {} 
-        } as User
+        } as User 
         
       })
       
     }) 
   }
   onsubmit(){
-    console.log("WORKING..",this.model)
+    console.log("WORKING..")
     this.service.logincheck(this.model.email,this.model.password)
     console.log(this.service.access)
+    console.log(this.service.currentUser)
   }
 
 }

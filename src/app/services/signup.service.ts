@@ -8,27 +8,33 @@ import { AngularFirestore} from '@angular/fire/firestore';
 export class SignupService {
   userList:any;
   access:boolean=false
+  currentUser=[]
 
   constructor(private fire:AngularFirestore) { }
 
   saveUser(data:any){
-    this.fire.collection("shopping-cart").add({...data})
+    this.fire.collection("deo").add({...data})
     console.log("added",data)
   }
   readUser(){
-    return this.fire.collection("shopping-cart").snapshotChanges()
+    return this.fire.collection("deo").snapshotChanges()
   }
+  addtoCart(item:[]){
+    // this.fire.doc("proData/"+post.id).update({...post}) 
+
+  }
+
+
   logincheck(e:string,p:string){
     for( let i of this.userList){
       if(i.email==e && i.password==p){  
          
-        // this.currentUser=i.firstName
+        this.currentUser=i
         this.access=true 
-      }
-    } 
+      } 
+    }  
     if(this.access!=true){
-      console.log("wrong")
-      this.access=false
+      console.log("wrong") 
       alert("check password and username")
     }
   }
