@@ -1,6 +1,6 @@
+import { SigninComponent } from './register/signin/signin.component';
+import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
-import { SignupComponent } from './home/signup/signup.component';
-import { LoginComponent } from './home/login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -10,14 +10,13 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
-    path:"login",
-    component:LoginComponent
+    path:"register",
+    component:RegisterComponent
   },
   {
-    path:"register",
-    component:SignupComponent
+    path:"login",
+    component:SigninComponent
   },
-
 ];
 
 @NgModule({
