@@ -1,7 +1,6 @@
 
-body {
-    min-height: 100vh;
-    padding: 10px; 
+.showcase { 
+    padding: 0px;  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -21,7 +20,7 @@ body {
   
     width: 220px;
     height: 400px;
-    margin: 30px;
+    margin: 30px; 
   
     perspective: 1000px;
   }
@@ -197,7 +196,7 @@ body {
   }
   
   button:active {
-    transform: translate(2px);
+    transform: translate(-5px);
   }
   
   /* .design-container */
@@ -305,13 +304,4 @@ body {
   button:focus+.design-container {
     --tr: 20;
     --op: .7;
-  }
-  
-  .abs-site-link {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    color: hsla(0, 0%, 100%, .6);
-    font-size: 16px;
-    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   }

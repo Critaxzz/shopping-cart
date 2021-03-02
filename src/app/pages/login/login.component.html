@@ -1,6 +1,5 @@
-<p>signin works!</p>
 <div class="container">
-    <form action="" [formGroup]="Form" (ngSubmit)="onsubmit(Form.value)">
+    <form action="" [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
       <mat-card class="example-card">
       <mat-card-content> 
         <h3>LOGIN</h3> 
@@ -25,7 +24,7 @@
           
     </div>
     <div class="sumbitbtn">
-        <button mat-raised-button  type="submit" [disabled]="Form.invalid">SIGNUP 
+        <button mat-raised-button  type="submit" [disabled]="loginForm.invalid">SIGNUP 
           <mat-icon matSuffix>login</mat-icon>
         </button>
     </div>

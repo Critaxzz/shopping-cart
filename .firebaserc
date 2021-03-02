@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "crud-2064f": {
+      "hosting": {
+        "myShopp": [
+          "crud-2064f"
+        ]
+      }
+    }
+  }
+}

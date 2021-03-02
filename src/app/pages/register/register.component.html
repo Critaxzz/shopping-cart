@@ -1,0 +1,59 @@
+<div class="container">
+    <form action="" [formGroup]="registerForm" (ngSubmit)="onRegister(registerForm.value)">
+      <mat-card class="example-card"> 
+      <mat-card-content> 
+        <h3>SignUp</h3> 
+        <div class="inputfields"> 
+      
+          <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Full Name</mat-label>
+            <input matInput placeholder=" " formControlName="Name">
+            <mat-icon matSuffix>person</mat-icon>
+            <mat-error>ENTER YOUR NAME</mat-error>
+            <!-- <mat-hint>Hint</mat-hint> -->
+          </mat-form-field>
+         
+  
+          <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Email Address</mat-label>
+            <input matInput placeholder=" "formControlName="Email">
+            
+            <mat-icon matSuffix>email</mat-icon> 
+            <mat-error>INVALID EMAIL ADDRESS</mat-error>
+  
+          </mat-form-field>
+  
+        
+          <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Phone Number</mat-label>
+            <input matInput placeholder=" " formControlName="PhoneNumber">
+            <mat-icon matSuffix>smartphone</mat-icon>
+            <mat-error>MUST BE 10 NUMBERS</mat-error> 
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" >
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+                <mat-error>MUST BE 8 CHARECTERS</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Confirm Your Password</mat-label>
+            <input matInput placeholder=" " type="password" formControlName="password2">
+            <mat-icon matSuffix>password</mat-icon> 
+            <mat-error>PASSWORD INCORRECT</mat-error>
+          </mat-form-field>
+          
+    </div>
+    <div class="sumbitbtn">
+        <button mat-raised-button  type="submit" [disabled]="registerForm.invalid">SIGNUP 
+          <mat-icon matSuffix>login</mat-icon>
+        </button>
+    </div>
+      </mat-card-content> 
+    </mat-card>
+    </form>
+  </div>
